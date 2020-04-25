@@ -1,0 +1,1 @@
+It is a Whatsapp-Automation code using python. Using this Script you can send Messages to a single user. The message can be sent any number of times.
