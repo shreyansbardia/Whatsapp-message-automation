@@ -13,15 +13,15 @@ driver = webdriver.Chrome(executable_path='C:\chromedriver_win32\chromedriver.ex
 driver.get('https://web.whatsapp.com/')
 
 
-name = "demo" #Name of the person to send
-msg = "Hi" #Message to be send
-count = 4 #Number of times message to be sent
+name = input('Enter the name of user or group : ')
+msg = input('Enter your message')
+count = int(input('Enter the count'))
 
 input('Enter anything after scanning QR code')
 
 #Finding the name of the person via XPATH - To get the Xpath Inspect the element and click copy -copy Xpath
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
-user.click() #Click on the user
+user.click() 
 
 msg_box = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]') # fIND THE TEXTbox
 
